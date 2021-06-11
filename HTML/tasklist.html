@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>TaskList</title>
+    <link href="tasklist.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="grid-container">
+    <div class="side-nav">
+  
+    </div>
+    <div class="footer">
+      
+    </div>
+    <div class="header">
+      
+    </div>
+    <div class="main">
+     
+      <h1> Task List </h1>
+    
+    <div class=formDiv>
+    <form id="taskform">
+      <label for="taskname"><b>Task Name:</b></label>
+      <input type="text" id="taskInput" name="fname">
+      <br>
+
+      <!--Due date input-->
+      <label for="dueDate"> <b>Due Date: </b></label>
+      <input type="date" name="dueDate" id="dueDateInput">
+      <br>
+
+     <!--completion time input-->
+      <label for="completionTime"><b>Completion Time:</b> </label>
+      <input type="time" name="completionTime" id="completionTimeInput">
+      <br>
+
+      <label for="estimatedTime"><b>Estimated Completion Time (in mins):</b> </label>
+      <input type="number" name="estimatedTime" id="estimatedTimeInput">
+
+      <!--Priority Input-->
+      <br>
+      <label for="priority"><b>Task Priority:</b></label>
+      <select name="priority" id="priorityInput">
+        <option value="">Select One</option>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+      <br>
+      
+      <button id="myButton">Submit</button>
+    </form>
+    </div>
+
+    <ul id="tasklist">
+      
+    </ul>
+
+    </div>
+    </div>
+    <script src="tasklist.js"></script>
+  </body>
+</html>

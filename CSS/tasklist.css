@@ -1,0 +1,51 @@
+
+.grid-container {
+  display: grid;
+  height:50vh;
+  grid-template-columns: 0.6fr 1.4fr 1fr 1fr;
+  grid-template-rows: 0.4fr 2.4fr 0.2fr;
+  gap: 1em; 1em;
+  grid-template-areas:
+    "side-nav header header header"
+    "side-nav main main main"
+    "footer footer footer footer";
+}
+.footer {
+grid-area: footer; 
+background-color:#3520f1;
+}
+.main { 
+grid-area: main; 
+background-color:#f0359c;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  font-family: "Poppins" , sans-serif;
+  margin:2em;
+}
+
+#tasklist {
+  list-style-type: none;
+}
+
+form {
+  text-align: center;
+}
+
+.testDiv {
+  width:10em;
+  text-align: center;
+  background-color: rgb(87, 84, 84);
+  padding: 0.4em;
+}
+
+.formDiv {
+  line-height: 2em;
+  padding:2em;
+  background-color: #6986d4;
+  border-radius: 1em;
+}

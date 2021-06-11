@@ -1,0 +1,21 @@
+button {
+    padding: 16px 20px;
+    border: none;
+    border-radius: 50px;
+    background: rgb(215, 109, 247);
+    color: rgb(15, 14, 14);
+    cursor: pointer;
+    outline: none;
+    opacity: 0.9;
+}
+
+#stopwatch {
+    font-size: 100px;
+    text-align: center;
+}
+
+.buttons li {
+    display: inline;
+    padding-left: 10px;
+    text-align: center;
+}

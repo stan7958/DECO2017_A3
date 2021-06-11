@@ -1,0 +1,57 @@
+#container{
+  border-radius :20px;
+  width:300px;
+  margin:20px auto;
+  padding:20px;
+  text-align:center;
+  background : rgb(214, 215, 219);
+}
+
+#timer{ 
+  color: rgb(156, 101, 188); 
+  font-size:50px; 
+  margin:10px auto;
+  border : 5px solid rgb(101, 178, 188);
+  border-radius:50%;
+  width:200px;
+  height:200px;
+  overflow:hidden;
+  position:relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor:default;
+}
+
+#time{
+  margin-top:70px;
+  z-index : 1;
+  position:relative;
+}
+
+
+#buttons button { 
+  background: rgb(12, 38, 207); 
+  border:none; 
+  color:#fff; 
+  cursor:pointer; 
+  padding:5px; 
+  width:90px; 
+  margin:10px 10px;
+  font-size:14px;
+  height : 50px;
+  border-radius : 10px;
+}
+
+#buttons button#shortDuration{
+  background : rgb(47, 89, 207);
+}
+
+#buttons button#longDuration{
+  background : rgb(7, 35, 221);
+}
+
+#buttons button#Reset/stop{
+  background : rgb(221, 236, 87);
+}

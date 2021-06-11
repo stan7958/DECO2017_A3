@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Studbud</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="theme">
+                <input type="checkbox" id="checkbox" class="checkbox">
+                <label class="label" for="checkbox">
+                    <div class="ball"></div>
+                </label>
+            </div>
+           
+            <ul class="nav-list">
+                <li><a href="#">Music Player</a></li>
+                <li><a href="#">Task List</a></li>
+                <li><a href="#">Stopwatch</a></li>
+                <li><a href="#">Pomodro Timer</a></li>
+                <li><a href="#">Kanban</a></li>
+                <li><a class="ctn" href="#">Reading list</a></li>
+            </ul>
+        </nav>
+
+        <div class="row">
+            <div class="header-content">
+                <h1>Studbud</h1>
+                <p>Your study assistant</p>
+            </div>
+            <div class="hero-img">
+                <img src="./images/Cover.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <!-- services -->
+    <section class="services" data-aos="fade-right">
+        <div class="container">
+            <div class="grid-wrapper">
+                <div class="grid-box TaskList">
+                    <img src="./images/TaskList.png" alt="">
+                    <h1>Task List</h1>
+                </div>
+                <div class="grid-box MusicPlayer">
+                    <img src="./images/MusicPlayer.png" alt="">
+                    <h1>Music Player</h1>
+                </div>
+                <div class="grid-box StopWatch">
+                    <img src="./images/StopWatch.png" alt="">
+                    <h1>Stop Watch</h1>
+                </div>
+                <div class="grid-box PomodroTimer">
+                    <img src="./images/PomodroTimer.png" alt="">
+                    <h1>Pomodro Timer</h1>
+                </div>
+                <div class="grid-box TaskList">
+                    <img src="./images/kanban.png" alt="">
+                    <h1>Kanban</h1>
+                </div>
+                <div class="grid-box PomodroTimer">
+                    <img src="./images/ReadingList.png" alt="">
+                    <h1>Reading List</h1>
+                </div>
+                </div>
+            </div>
+                <a href="#" class="ctn">Get start</a>
+            </div>
+        </div>
+    </section>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Studbud</title>
+    <link href="CSS/tasklist.css" rel="stylesheet" type="text/css" />
+  
+    <div class="grid-container">
+    <div class="side-nav">
+  
+    </div>
+    <div class="footer">
+      
+    </div>
+    <div class="header">
+      
+    </div>
+    <div class="main">
+     
+      <h1> Task List </h1>
+    
+    <div class=formDiv>
+    <form id="taskform">
+      <label for="taskname"><b>Task Name:</b></label>
+      <input type="text" id="taskInput" name="fname">
+      <br>
+
+      <!--Due date input-->
+      <label for="dueDate"> <b>Due Date: </b></label>
+      <input type="date" name="dueDate" id="dueDateInput">
+      <br>
+
+     <!--completion time input-->
+      <label for="completionTime"><b>Completion Time:</b> </label>
+      <input type="time" name="completionTime" id="completionTimeInput">
+      <br>
+
+      <label for="estimatedTime"><b>Estimated Completion Time (in mins):</b> </label>
+      <input type="number" name="estimatedTime" id="estimatedTimeInput">
+
+      <!--Priority Input-->
+      <br>
+      <label for="priority"><b>Task Priority:</b></label>
+      <select name="priority" id="priorityInput">
+        <option value="">Select One</option>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+      <br>
+      
+      <button id="myButton">Submit</button>
+    </form>
+    </div>
+
+    <ul id="tasklist">
+      
+    </ul>
+
+    </div>
+    </div>
+    <script src="JS/tasklist.js"></script>
+     
+     <link href="CSS/stopwatch.css" rel="stylesheet" type="text/css" />
+          <h2 id="stopwatchtimer">Stopwatch Timer</h2>
+       <p id = "output" class = "text-center"></p>
+  <div id = "controls" class = "text-center">
+    <button class="btn btn-default" id = "startPause" onclick = "startPause()">START</button>
+    <button class="btn btn-default" onclick = "reset()">RESET</button>
+    <script src="JS/stopwatch.js"></script>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Studbud</title>
+    <link href="CSS/musicplayer.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+  </head>
+  
+  <body>
+    <div class="music-container" id="music-container">
+      <div class="music-info">
+        <h4 id="title"></h4>
+      </div>
+
+
+      <audio src="music/song1.mp3" id="audio"></audio>
+      
+      <div class="navigation">
+        <button id="prev" class="action-btn">
+          <i class="fas fa-backward"></i>
+        </button>
+        <button id="play" class="action-btn action-btn-big">
+          <i class="fas fa-play"></i>
+        </button>
+        <button id="next" class="action-btn">
+          <i class="fas fa-forward"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="JS/musicplayer.js"></script>
+  </body>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="CSS/pomodorotimer.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="container">
+    <div id="timer">
+      <div id="time">
+        <span id="minutes">25</span>
+        <span id="separator">:</span>
+        <span id="seconds">00</span>
+      </div>
+    </div>
+
+    <div id="buttons">
+      <button id="pomodorostop">Reset/Stop</button>
+      <br>
+      <button id="promodoro">Start</button>
+      <button id="shortBreak">Short duration</button>
+      <button id="longBreak">Long duration</button>
+    </div>
+  </div>
+
+    <script src="JS/pomodorotimer.js"></script>
+  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="CSS/readinglist.css">
+  <title>Reading list</title>
+</head>
+<body>
+
+  <div class="row">
+		<div class="column-left">
+			<div class="card" id="taskcard">
+				<h1>Reading list</h1>
+				<ul class="todo-items">
+				</ul>
+          
+          <div class="todo-form" id="taskform">
+            <form action="/action_page.php" class="form-containter">
+              <table class="table-form">
+                <tr>
+                  <td> <label for="task">Reference No:</label></td>
+                  <td><input type="text" class="todo-input" placeholder="Add a Reference No..."></td>
+                </tr>
+                <!-- Link -->
+                <tr>
+                  <td><label for="Link">Link:</label></td>
+                  <td><input type="text" name="Link" id="LinkInput"></td>
+                
+                <!-- Notes -->
+                </tr>
+                <tr>
+                  <td><label for="notes">Notes:</label></td>
+                  <td><input type="text" name="notes" id="notesInput"></td>
+                </tr>
+                <!--Group-->
+                </tr>
+                <tr>
+                  <td><label for="notes">Group:</label></td>
+                  <td><input type="text" name="Group" id="GroupInput"></td>
+                </tr>
+              </table>
+              <button type="submit" class="add-button">Submit</button>
+            
+            </form>
+          </div>
+			</div>
+		</div>
+  </div>
+
+  <script type="text/javascript" src="JS/readinglist.js"></script>
+</body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Studbud</title>
+    <link rel="stylesheet" href="CSS/kanban.css">
+  </head>
+  <body>
+
+
+
+    <div id="tasks-board" class="sub-page-container">
+  <ul class="columns">
+
+    <li class="column to-do-column">
+      <div class="column-header">
+        <h4>To Do</h4>
+      </div>
+      <ul class="assessment-list" id="to-do">
+        <li class="assessment">
+          <p>Assessment1</p>
+        </li>
+      </ul>
+    </li>
+
+    <li class="column inprocess-column">
+      <div class="column-header">
+        <h4>In Process</h4>
+      </div>
+      <ul class="assessment-list" id="InProcess">
+        <li class="assessment">
+        </li>
+      </ul>
+    </li>
+
+    <li class="column done-column">
+      <div class="column-header">
+        <h4>Done</h4>
+      </div>
+      <ul class="assessment-list" id="done">
+        <li class="assessment">
+          <p>Assessment2</p>
+        </li>
+      </ul>
+    </li>
+
+  </ul>
+</div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.js'></script><script type="module" src="JS/kanban.js"></script>
+
+  </body>
+
+<!-- call to action -->
+    <section class="getstarted">
+        <div class="ctn-container">
+            <div class="ctn-text">
+                <h1>Start your trip from Studbud</h1>
+                <p>An advance study trip from our website</p>
+            </div>
+            <button class="ctn-btn">Go</button>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+        <div class="grid-wrapper">
+            <div class="col-4 footer1">
+                <h1>Studbud</h1>
+                <p>Join us now and get your fancy study trip. You will get HDs for all units of study!</p>
+                <div class="social-profiles">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linkedin"></i>
+                </div>
+            </div>
+            <div class="col-4 footer2">
+                <h1>Contact info</h1>
+                <h4>Studbud, Sydney</h4>
+                <h4>4008-823-823</h4>
+                <h4>contactus@studbud.com</h4>
+            </div>
+            <div class="col-4 footer3">
+                <h1>About Us</h1>
+                <h4>company</h4>
+                <h4>Services</h4>
+                <h4>Sources</h4>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <h4>Privacy Policy</h4>
+            <h4>Terms and use</h4>
+        </div>
+
+        <!-- Scroll to top btn -->
+        <i id="scrolltp" class="fa fa-arrow-up"></i>
+
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        delay: 100,
+        duration: 1000,
+      });
+    </script>
+
+    <script src="./app.js"></script>
+    </body>
+</html>

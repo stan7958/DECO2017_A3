@@ -1,0 +1,136 @@
+h1,
+h4 {
+  line-height: 1.3;
+  color: rgb(8, 8, 8);
+}
+
+header h1 {
+  font-size: 5rem;
+  margin: 4rem auto;
+}
+
+span {
+  font-size: 3rem;
+}
+
+a,
+a:link,
+a:active,
+a:visited {
+  color: #04fce7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000000;
+}
+
+#tasks-board {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin: 1.6rem auto;
+}
+
+.column {
+  width: 8.4rem;
+  margin: 0 0.6rem;
+  background : rgb(240, 80, 80);
+  border-radius: 0.2rem;
+}
+
+.column-header {
+  background: rgb(15, 65, 214)
+}
+
+.column-header h4 {
+  text-align: center;
+}
+
+.task-list {
+  min-height: 3rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.column-button {
+  text-align: center;
+  padding: 0.1rem;
+}
+
+.assessment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  vertical-align: middle;
+  list-style-type: none;
+  background: rgb(10, 207, 233);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin: 0.4rem;
+  height: 4rem;
+  border-radius: 0.2rem;
+  cursor: move;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#assessmenttext {
+  background: rgb(2, 0, 0);
+  border-radius: 0.2rem;
+  text-align: center;
+  height: 4rem;
+  width: 7rem;
+  margin: auto 0.8rem auto 0.1rem;
+}
+
+.task p {
+  margin: auto;
+}
+
+
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+}
+
+.gu-hide {
+  display: none !important;
+}
+
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+.gu-transit {
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
+}

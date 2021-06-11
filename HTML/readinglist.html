@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="CSS/readinglist.css">
+  <title>Reading list</title>
+</head>
+<body>
+
+  <div class="row">
+		<div class="column-left">
+			<div class="card" id="taskcard">
+				<h1>Reading list</h1>
+				<ul class="todo-items">
+				</ul>
+          
+          <div class="todo-form" id="taskform">
+            <form action="/action_page.php" class="form-containter">
+              <table class="table-form">
+                <tr>
+                  <td> <label for="task">Reference No:</label></td>
+                  <td><input type="text" class="todo-input" placeholder="Add a Reference No..."></td>
+                </tr>
+                <!-- Link -->
+                <tr>
+                  <td><label for="Link">Link:</label></td>
+                  <td><input type="text" name="Link" id="LinkInput"></td>
+                
+                <!-- Notes -->
+                </tr>
+                <tr>
+                  <td><label for="notes">Notes:</label></td>
+                  <td><input type="text" name="notes" id="notesInput"></td>
+                </tr>
+                <!--Group-->
+                </tr>
+                <tr>
+                  <td><label for="notes">Group:</label></td>
+                  <td><input type="text" name="Group" id="GroupInput"></td>
+                </tr>
+              </table>
+              <button type="submit" class="add-button">Submit</button>
+            
+            </form>
+          </div>
+			</div>
+		</div>
+  </div>
+
+  <script type="text/javascript" src="JS/readinglist.js"></script>
+</body>
+</html>

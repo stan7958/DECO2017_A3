@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Studbud</title>
+    <link rel="stylesheet" href="CSS/kanban.css">
+  </head>
+  <body>
+
+
+
+    <div id="tasks-board" class="sub-page-container">
+  <ul class="columns">
+
+    <li class="column to-do-column">
+      <div class="column-header">
+        <h4>To Do</h4>
+      </div>
+      <ul class="assessment-list" id="to-do">
+        <li class="assessment">
+          <p>Assessment1</p>
+        </li>
+      </ul>
+    </li>
+
+    <li class="column inprocess-column">
+      <div class="column-header">
+        <h4>In Process</h4>
+      </div>
+      <ul class="assessment-list" id="InProcess">
+        <li class="assessment">
+        </li>
+      </ul>
+    </li>
+
+    <li class="column done-column">
+      <div class="column-header">
+        <h4>Done</h4>
+      </div>
+      <ul class="assessment-list" id="done">
+        <li class="assessment">
+          <p>Assessment2</p>
+        </li>
+      </ul>
+    </li>
+
+
+  </ul>
+</div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.js'></script><script type="module" src="JS/kanban.js"></script>
+
+  </body>
+</html>
